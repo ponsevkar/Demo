@@ -66,7 +66,9 @@ padding-left: 50px;
   height: 500px;
   width: 50%;
 }
-
+.usa-article img{
+  width: 175px;
+}
 .flexchina{
   display: flex;
   border: black 1px solid;
@@ -86,5 +88,16 @@ padding-left: 50px;
   background-color: white;
   padding: 100px;
   height: 500px;
+  width: 50%;
+}
+.china-article img{
+  width: 150px;
+}
+
+.flexarticleusa{
+  display: flex;
+}
+.flexarticlechina{
+  display:flex;
   width: 50%;
 }

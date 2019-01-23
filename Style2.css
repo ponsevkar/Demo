@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-family: Kanit;
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+h2{
+  text-align: left;
+  font-size: 65px;
+  font-family: Kanit;
+  padding-left: 50px;
+}
+
+h3{
+  color: black;
+  text-align: center;
+  font-size: 65px;
+  font-family: Kanit;
+  margin-top: 5px;
+  margin: 5px;
+}
+
+h4{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: Kanit;
+  margin-top: 5px;
+}
+
+h5{
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+p{
+  color: black;
+  text-align: left;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5px;
+
+}
+
+.header{
+  background-image: url(file:///C:/Users/p.severin-karlsson/OneDrive%20-%20Bonnier%20News/Intro/Kodarkurs/Demo/US-trade-war-with-China.jpg);
+  background-repeat:no-repeat;
+  background-size: 85%;
+  background-position: center;
+  padding: 10px;
+  filter: brightness(130%);
+  border-bottom: solid black 2px;
+}
+
+.flextopmentions{
+display: flex;
+justify-content: center;
+}
+
+.right, .left {
+  width: 50%;
+  margin: 10px;
+}
+.mentionsusheader{
+  background-image: url(file:///C:/Users/p.severin-karlsson/OneDrive%20-%20Bonnier%20News/Intro/Kodarkurs/Demo/Trump_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 15px 50px;
+}
+.topmentions img{
+  width: 100%;
+  padding: 10px;
+}
+.headlinedescription{
+  display: block;
+}
+.mentionschinaheader{
+  background-image: url(file:///C:/Users/p.severin-karlsson/OneDrive%20-%20Bonnier%20News/Intro/Kodarkurs/Demo/Xi%20Jinping_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 15px 50px;
+}
+
+.topmentions{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid black 1px;
+}
+.newsimage{
+  height: 72px;
+  width: 110px;
+  background-image: url(file:///C:/Users/p.severin-karlsson/OneDrive%20-%20Bonnier%20News/Intro/Kodarkurs/Demo/Trump_hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+h1{
+  font-size: 40px;
+  }
+h3{
+  font-size: 32px;
+  padding-top: 10px;
+  border-bottom: solid black 1px;
+}
+.header{
+  background-size: 100%;
+  padding-bottom: 10px;
+  background-position: top, center;
+  margin-left: 40px;
+  }
+  .right, .left{
+    display: block;
+  }
+.flextopmentions{
+  display: block;
+}
+}
+@media (min-width: 600px) and (max-width: 900px) {
+h1{
+  font-size: 60px;
+}
+h3{
+  font-size:40px;
+}
+}
