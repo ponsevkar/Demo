@@ -51,18 +51,27 @@
       let urltotalleft = "https://newsapi.org/v2/everything?q=trade%20war%20AND%20trump&apiKey=789530644cd74ad69e6e406a4b9e30b0&from=2019-01-30"
 
       let receivedNewsCounterLeft = (newsData) => {
-
-          newsData.article.length((article) => {
-
-            document.querySelector(".newsCounterLeft").innerHTML +=
-              `<div class="topmentions">
-                    <h5>${totalResults}</h5>
-              </div>`
-
-          })
+        document.querySelector(".newsCounterLeft").innerHTML +=
+          `<div class="totalresults trump">
+              ${newsData.totalResults}
+          </div>`
         }
 
 
         fetch(urltotalleft)
           .then(response => response.json())
           .then(receivedNewsCounterLeft)
+
+        let urltotalright = "https://newsapi.org/v2/everything?q=%20trade%20war%20AND%20Xi%20Jinping&apiKey=789530644cd74ad69e6e406a4b9e30b0&from=2019-01-30"
+
+        let receivedNewsCounterRight = (newsData) => {
+            document.querySelector(".newsCounterRight").innerHTML +=
+              `<div class="totalresults china">
+                  ${newsData.totalResults}
+              </div>`
+        }
+
+
+        fetch(urltotalright)
+          .then(response => response.json())
+          .then(receivedNewsCounterRight)

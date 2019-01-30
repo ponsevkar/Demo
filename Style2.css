@@ -81,7 +81,7 @@ p{
 }
 
 .rubrik3{
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 .flextopmentions{
@@ -135,14 +135,45 @@ justify-content: center;
   padding-top: 5px;
 }
 
+.Counters{
+  display: flex;
+  justify-content: center;
+}
 
+.totalresults {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 275px;
+
+}
+
+.totalresults.trump{
+  background-image: url(./Trump_hero.jpg);
+}
+
+.totalresults.china{
+  background-image: url(./Xi%20Jinping_hero.jpg);
+}
+
+.newsCounterLeft{
+  width: 50%;
+}
+
+.newsCounterRight{
+  width: 50%;
+}
 @media (max-width: 999px) {
   h1{
     margin-left: 40px;
-}
-h6{
+  }
+  h6{
   border-bottom: solid black 1px;
-}
+  }
 .header{
   background-size: 100%;
   background-size: cover;
@@ -155,6 +186,11 @@ h6{
     width: 100%;
     margin: 1px;
   }
+  .Counters{
+    display: block;
+    width: 100%;
+    margin: 1px;
+  }
 
 .flextopmentions{
   display: block;
@@ -162,6 +198,24 @@ h6{
   border-radius: 25px
   border: solid black 2px;
 }
+
+.newsCounterLeft{
+  font-size: 50px;
+
+}
+.totalresults{
+  width: 500px;
+  margin-bottom: 5px;
+  margin-left: block;
+  margin-right: block;
+  border-radius: 50px;
+
+}
+
+.rubrik3{
+  margin-bottom: 10px;
+}
+
 }
 @media (max-width: 878px){
   h1{
@@ -174,6 +228,9 @@ h6{
   }
   h6{
     font-size: 50px;
+  }
+  .rubrik3{
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 710px){
